@@ -1,0 +1,171 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/RegistrationStyle.scss */
+body {
+  background-color: #cdcdcd;
+}
+
+/* line 11, ../sass/RegistrationStyle.scss */
+.wrap {
+  width: 100%;
+}
+
+/* line 14, ../sass/RegistrationStyle.scss */
+.regBox {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #616161;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: #fff;
+  margin-top: 100px;
+}
+/* line 25, ../sass/RegistrationStyle.scss */
+.regBox .boxTitle {
+  border-bottom: 1px solid #616161;
+  margin-bottom: 15px;
+  padding: 15px;
+  overflow: hidden;
+}
+/* line 31, ../sass/RegistrationStyle.scss */
+.regBox .boxTitle h1.title {
+  text-transform: uppercase;
+  font-size: 28px;
+  float: left;
+}
+/* line 37, ../sass/RegistrationStyle.scss */
+.regBox .boxTitle .boxLogo {
+  width: 85px;
+  float: right;
+}
+/* line 41, ../sass/RegistrationStyle.scss */
+.regBox .boxTitle .boxLogo img {
+  width: 100%;
+}
+/* line 46, ../sass/RegistrationStyle.scss */
+.regBox .registrationForm {
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* line 52, ../sass/RegistrationStyle.scss */
+.regBox .registrationForm .boxInput {
+  margin-bottom: 20px;
+}
+/* line 55, ../sass/RegistrationStyle.scss */
+.regBox .registrationForm .boxInput .iconLogin {
+  background: url("../imgs/icon_login.png") center no-repeat;
+}
+/* line 58, ../sass/RegistrationStyle.scss */
+.regBox .registrationForm .boxInput .iconPass {
+  background: url("../imgs/icon_password.png") center no-repeat;
+}
+/* line 61, ../sass/RegistrationStyle.scss */
+.regBox .registrationForm .boxInput .labelIcon {
+  display: block;
+  float: left;
+  width: 15%;
+  height: 30px;
+  border: 1px solid #616161;
+  border-right: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: #fff;
+  background-size: auto 100%;
+  background-color: #fff;
+}
+/* line 75, ../sass/RegistrationStyle.scss */
+.regBox .registrationForm .boxInput input {
+  border: 1px solid #616161;
+  width: 85%;
+  padding: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* line 85, ../sass/RegistrationStyle.scss */
+.regBox .registrationForm .btnLogin {
+  display: block;
+  border: 1px solid #616161;
+  font-size: 18px;
+  background: #fff;
+  padding: 5px;
+  width: 150px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-align: center;
+}

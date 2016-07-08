@@ -1,0 +1,553 @@
+/* line 5, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "AFuturicaBlack";
+  src: url("../fonts/a_FuturicaBlack.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Futuramediumc";
+  src: url("../fonts/futuramediumc.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 27, ../sass/styles.scss */
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* line 31, ../sass/styles.scss */
+body {
+  background-color: #fff;
+  height: 100%;
+}
+
+/* line 35, ../sass/styles.scss */
+#wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 0;
+  position: relative;
+}
+/* line 41, ../sass/styles.scss */
+#wrapper .wrappMenu {
+  width: 14.688vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: none;
+  z-index: -1;
+  background-color: #3f392c;
+  padding: 0 0.8439vw;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* line 55, ../sass/styles.scss */
+#wrapper .wrappMenu .menu {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 59, ../sass/styles.scss */
+#wrapper .wrappMenu .itemMenu {
+  list-style-type: none;
+  display: block;
+  font-family: Futuramediumc;
+  font-size: 1vw;
+  color: #fff;
+}
+/* line 66, ../sass/styles.scss */
+#wrapper .wrappMenu .itemMenu .linkMenu {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  margin-bottom: 1.8229vw;
+}
+/* line 73, ../sass/styles.scss */
+#wrapper .wrappMenu .itemMenu .linkMenu.activeMenuItem {
+  color: #feb101;
+}
+/* line 76, ../sass/styles.scss */
+#wrapper .wrappMenu .itemMenu .linkMenu:hover {
+  color: #feb101;
+}
+/* line 81, ../sass/styles.scss */
+#wrapper .wrappMenu .itemMenu .submenu {
+  display: none;
+  margin-left: 0.9896vw;
+  opacity: 0;
+  -moz-transition: all 5s ease-out;
+  -o-transition: all 5s ease-out;
+  -webkit-transition: all 5s ease-out;
+}
+/* line 89, ../sass/styles.scss */
+#wrapper .wrappMenu .itemMenu .submenu .itemSubmenu {
+  color: #706958;
+}
+
+/* line 98, ../sass/styles.scss */
+.rightSitebar {
+  width: 9.69%;
+  height: 100%;
+  background-color: #fff;
+  float: left;
+  padding: 1.97% 0 2.11% 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+}
+/* line 109, ../sass/styles.scss */
+.rightSitebar .header {
+  width: 100%;
+}
+/* line 112, ../sass/styles.scss */
+.rightSitebar .header .logo {
+  display: block;
+  width: 58.9%;
+  height: 4.844vw;
+  background: url(../images/logo.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+/* line 122, ../sass/styles.scss */
+.rightSitebar .pageMenu {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -95%;
+}
+/* line 131, ../sass/styles.scss */
+.rightSitebar .pageMenu .mainMenu .itemMainMenu {
+  margin-bottom: 2.8996vw;
+  list-style-type: none;
+  display: block;
+  height: 1.563vw;
+}
+/* line 138, ../sass/styles.scss */
+.rightSitebar .pageMenu .mainMenu .itemMainMenu:last-child {
+  margin-bottom: 0;
+}
+/* line 142, ../sass/styles.scss */
+.rightSitebar .pageMenu .mainMenu .itemMainMenu .linkMainMenu {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  margin: 0 auto;
+  width: 1.615vw;
+  height: 1.667vw;
+}
+/* line 150, ../sass/styles.scss */
+.rightSitebar .pageMenu .mainMenu .itemMainMenu .linkMainMenu.goToMenu {
+  background: url(../images/menu.png) no-repeat;
+  margin: 0 auto;
+  background-size: 100% 100%;
+}
+/* line 155, ../sass/styles.scss */
+.rightSitebar .pageMenu .mainMenu .itemMainMenu .linkMainMenu.goToMenu.openMenu {
+  background: url(../images/close.png) no-repeat;
+  background-size: 100% 100%;
+}
+/* line 161, ../sass/styles.scss */
+.rightSitebar .pageMenu .mainMenu .itemMainMenu .linkMainMenu.goToLogin {
+  background: url(../images/login.png) no-repeat;
+  margin: 0 auto;
+  background-size: 100% 100%;
+}
+/* line 167, ../sass/styles.scss */
+.rightSitebar .pageMenu .mainMenu .itemMainMenu .linkMainMenu.gotoPhone {
+  background: url(../images/phone.png) no-repeat;
+  margin: 0 auto;
+  background-size: 100% 100%;
+}
+/* line 173, ../sass/styles.scss */
+.rightSitebar .pageMenu .mainMenu .itemMainMenu .linkMainMenu.goToBag {
+  background: url(../images/bag.png) no-repeat;
+  margin: 0 auto;
+  background-size: 100% 100%;
+}
+/* line 183, ../sass/styles.scss */
+.rightSitebar .boxBottomFix {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  bottom: 1.5625vw;
+  left: 0;
+}
+/* line 192, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .checkLang {
+  overflow: hidden;
+  margin-bottom: 26.5%;
+  width: 58%;
+  margin: 0 auto;
+  margin-bottom: 1.5625vw;
+}
+/* line 199, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .checkLang .lang {
+  width: 33.33%;
+  display: block;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Futuramediumc;
+  font-size: 1.1vw;
+  color: #bbb4a5;
+}
+/* line 211, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .checkLang .lang.langEn {
+  text-align: left;
+}
+/* line 215, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .checkLang .lang.langUa {
+  text-align: right;
+}
+/* line 219, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .checkLang .lang.activeLang {
+  font-weight: bold;
+}
+/* line 225, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .social {
+  overflow: hidden;
+  width: 58.92%;
+  margin: 0 auto;
+}
+/* line 230, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .social .boxIconSocial {
+  display: block;
+  float: left;
+  width: 25%;
+  height: 1.198vw;
+}
+/* line 236, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .social .boxIconSocial .socialIcon {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 84.4% !important;
+  height: 100%;
+  opacity: 0.5;
+}
+/* line 244, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .social .boxIconSocial .socialIcon:hover {
+  opacity: 1;
+}
+/* line 248, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .social .boxIconSocial .socialIcon.vkontakte {
+  background: url(../images/vkontakte.png) no-repeat;
+  background-size: 100% 100%;
+}
+/* line 254, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .social .boxIconSocial .socialIcon.facebook {
+  background: url(../images/facebook.png) no-repeat;
+  background-size: 100% 100%;
+}
+/* line 260, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .social .boxIconSocial .socialIcon.linkedin {
+  background: url(../images/linkedin.png) no-repeat;
+  background-size: 100% 100%;
+}
+/* line 266, ../sass/styles.scss */
+.rightSitebar .boxBottomFix .social .boxIconSocial .socialIcon.instagram {
+  background: url(../images/instagram.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+/* line 278, ../sass/styles.scss */
+.productCategory {
+  width: 90.31%;
+  height: 100%;
+  float: right;
+  z-index: 1;
+  position: relative;
+}
+/* line 285, ../sass/styles.scss */
+.productCategory .category {
+  list-style-type: none;
+  display: block;
+  float: left;
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  font-family: AFuturicaBlack;
+  font-size: 1.6vw;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 299, ../sass/styles.scss */
+.productCategory .category .titleCategory {
+  display: block;
+  position: absolute;
+  bottom: 1.5625vw;
+  left: 5%;
+  opacity: 0.6;
+}
+/* line 306, ../sass/styles.scss */
+.productCategory .category .titleCategory .wordWrap {
+  display: block;
+  margin-top: 0.627vw;
+}
+/* line 312, ../sass/styles.scss */
+.productCategory .category:hover .titleCategory {
+  opacity: 1;
+}
+/* line 316, ../sass/styles.scss */
+.productCategory .category .womenBoots {
+  background: url(../images/womenboots.jpg) no-repeat;
+}
+/* line 320, ../sass/styles.scss */
+.productCategory .category .teenBoots {
+  background: url(../images/teenboots.jpg) no-repeat;
+}
+/* line 324, ../sass/styles.scss */
+.productCategory .category .kidBoots {
+  background: url(../images/kidboots.jpg) no-repeat;
+}
+/* line 328, ../sass/styles.scss */
+.productCategory .category .menBoots {
+  background: url(../images/menboots.jpg) no-repeat;
+}
+/* line 332, ../sass/styles.scss */
+.productCategory .category .locationCategory {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -moz-background-size: cover;
+  background-position: center;
+  position: relative;
+  -moz-transition: all 5s ease-out;
+  -o-transition: all 5s ease-out;
+  -webkit-transition: all 5s ease-out;
+}
+/* line 344, ../sass/styles.scss */
+.productCategory .category .locationCategory:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+@media (max-width: 959px) {
+  /* line 358, ../sass/styles.scss */
+  .productCategory .category .womenBoots {
+    background: url(../images/womenbootsMobile.jpg) no-repeat;
+  }
+  /* line 362, ../sass/styles.scss */
+  .productCategory .category .teenBoots {
+    background: url(../images/teenbootsMobile.jpg) no-repeat;
+  }
+  /* line 366, ../sass/styles.scss */
+  .productCategory .category .kidBoots {
+    background: url(../images/kidbootsMobile.jpg) no-repeat;
+  }
+  /* line 370, ../sass/styles.scss */
+  .productCategory .category .menBoots {
+    background: url(../images/menbootsMobile.jpg) no-repeat;
+  }
+  /* line 373, ../sass/styles.scss */
+  .productCategory .category .locationCategory {
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* line 380, ../sass/styles.scss */
+  #wrapper.mobile {
+    position: relative;
+  }
+  /* line 383, ../sass/styles.scss */
+  #wrapper.mobile .wrappMenu {
+    width: 82%;
+    padding: 0 8%;
+  }
+  /* line 388, ../sass/styles.scss */
+  #wrapper.mobile .wrappMenu .itemMenu {
+    font-size: 6vw;
+  }
+  /* line 394, ../sass/styles.scss */
+  #wrapper.mobile .wrappMenu .itemMenu .linkMenu {
+    margin: 0;
+    line-height: 14.7vw;
+    border-bottom: 1px solid #5a5446;
+  }
+  /* line 401, ../sass/styles.scss */
+  #wrapper.mobile .wrappMenu .itemMenu:last-child .linkMenu {
+    border: none;
+  }
+  /* line 405, ../sass/styles.scss */
+  #wrapper.mobile .wrappMenu .itemMenu .submenu {
+    margin-left: 6%;
+  }
+  /* line 410, ../sass/styles.scss */
+  #wrapper.mobile .wrappMenu .itemMenu .submenu .itemSubmenu .linkSubmenu {
+    border-bottom: 1px solid #5a5446;
+  }
+
+  /* line 420, ../sass/styles.scss */
+  .rightSitebar.mobile {
+    width: 100%;
+    height: 10%;
+    float: none;
+    padding: 0 6.67%;
+    position: relative;
+  }
+  /* line 428, ../sass/styles.scss */
+  .rightSitebar.mobile .header {
+    width: 13.14%;
+    height: 11.263vw;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -5.6315vw 0 0 -6.57%;
+  }
+  /* line 437, ../sass/styles.scss */
+  .rightSitebar.mobile .header .logo {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 443, ../sass/styles.scss */
+  .rightSitebar.mobile .pageMenu {
+    margin: 0;
+    position: static;
+    height: 100%;
+    width: 100%;
+    display: table;
+  }
+  /* line 450, ../sass/styles.scss */
+  .rightSitebar.mobile .pageMenu .mainMenu {
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  /* line 455, ../sass/styles.scss */
+  .rightSitebar.mobile .pageMenu .mainMenu .itemMainMenu {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin: 0;
+  }
+  /* line 462, ../sass/styles.scss */
+  .rightSitebar.mobile .pageMenu .mainMenu .itemMainMenu:last-child {
+    margin-right: 0;
+  }
+  /* line 466, ../sass/styles.scss */
+  .rightSitebar.mobile .pageMenu .mainMenu .itemMainMenu .linkMainMenu {
+    margin: 0;
+    width: 5.006vw;
+    height: 5.528vw;
+  }
+  /* line 471, ../sass/styles.scss */
+  .rightSitebar.mobile .pageMenu .mainMenu .itemMainMenu .linkMainMenu.goToMenu {
+    margin: 0;
+  }
+  /* line 477, ../sass/styles.scss */
+  .rightSitebar.mobile .pageMenu .mainMenu .itemMainMenu .linkMainMenu.goToLogin {
+    margin: 0;
+  }
+  /* line 483, ../sass/styles.scss */
+  .rightSitebar.mobile .pageMenu .mainMenu .itemMainMenu .linkMainMenu.gotoPhone {
+    margin: 0;
+    float: right;
+  }
+  /* line 490, ../sass/styles.scss */
+  .rightSitebar.mobile .pageMenu .mainMenu .itemMainMenu .linkMainMenu.goToBag {
+    margin: 0;
+    float: right;
+  }
+
+  /* line 505, ../sass/styles.scss */
+  .productCategory.mobile {
+    width: 100%;
+    height: 90%;
+  }
+  /* line 508, ../sass/styles.scss */
+  .productCategory.mobile .category {
+    width: 50%;
+    height: 50%;
+    font-size: 1.8vw;
+  }
+
+  /* line 515, ../sass/styles.scss */
+  .social.mobile {
+    display: none;
+  }
+
+  /* line 518, ../sass/styles.scss */
+  .checkLang.mobile {
+    display: none;
+  }
+}

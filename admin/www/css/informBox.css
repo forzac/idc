@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.boxInfo {
+	width: 100%;
+	background-color: gray;
+	border-bottom: 2px solid blue;
+	padding-bottom: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+
+}
+.boxVisiblePart {
+	width: auto;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	display: table;
+	text-align: center;
+}
+
+.icon {
+	font-size: 55px;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+.messageText {
+	padding: 0 0 0 20px;
+	margin: 0;
+	font-size: 16px;
+	display: table-cell;
+	vertical-align: middle;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: left;
+}
+.boxRemove {
+	position: absolute;
+	bottom: -19px;
+	line-height: 1;
+	left: 50%;
+	color: red;
+	text-align: center;
+	font-size: 38px;
+	cursor: pointer;
+}
+
+.boxInfo.ifo {
+	background-color: #fff99d;
+	border-color: yellow;
+}
+.boxInfo.ifo .icon {
+	color: orange;
+}
+.boxInfo.error {
+	background-color: #facaca;
+	border-color: red;
+}
+.boxInfo.error .icon {
+	color: red;
+}
+.boxInfo.noErron {
+	background-color: #5bff9d;
+	border-color: green;
+}
+.boxInfo.noErron .icon {
+	color: green;
+}
+
+.showBoxInfo {
+	margin-top: 30px;
+	cursor: pointer;
+	border: 1px solid #cecece;
+	display: block;
+	float: left;
+	padding: 5px 10px;
+}
+.showBoxInfo:hover {
+	background-color: #eeeeee;
+}

@@ -1,0 +1,164 @@
+/*.wrapper {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: magenta;
+}
+*/
+
+
+
+
+
+
+form.formWrapp {
+	width: 100%;
+	overflow: hidden;
+}
+form.formWrapp .mainBoxForm {
+	width: 100%;
+	font-size: 14px;
+	padding: 0 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+form.formWrapp .fieldBoxForm {
+	height: auto;
+	width: 100%;
+	clear: both;
+	margin-bottom: 10px;
+	position: relative;
+	border: 2px solid gray;
+	border-right: none;
+	border-left: none;
+	padding: 2px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: all 1s ease 0s;
+}
+form.formWrapp .fieldBoxForm.false {
+	border-color: red;
+}
+form.formWrapp .fieldBoxForm.true {
+	border-color: green;
+}
+form.formWrapp .fieldBoxForm label, form.formWrapp .fieldBoxForm input, form.formWrapp .fieldBoxForm .select_view, form.formWrapp .fieldBoxForm.false .errorBox {
+	display: inline-block;
+	float: none;
+}
+form.formWrapp .fieldBoxForm label {
+	width: 30%;
+	font-weight: bold;
+	line-height: 1.5;
+	text-align: right;
+	padding-right: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+form.formWrapp .fieldBoxForm.false label {
+	color: red;
+	font-weight: bold;
+}
+form.formWrapp .fieldBoxForm.true label {
+	color: green;
+	font-weight: bold;
+}
+form.formWrapp .fieldBoxForm input, form.formWrapp .fieldBoxForm textarea {
+	width: 70%;
+}
+form.formWrapp .fieldBoxForm .textField {
+	border: 2px solid #cecece;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 3px;
+}
+form.formWrapp .fieldBoxForm .selectField {
+	float: left;
+}
+form.formWrapp .fieldBoxForm .checkField {
+	width: auto;
+	cursor: pointer;
+}
+form.formWrapp .fieldBoxForm .radioField {
+	width: auto;
+	cursor: pointer;
+}
+form.formWrapp .fieldBoxForm .fileField {
+}
+form.formWrapp .fieldBoxForm .textAreaField {
+	resize: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 2px solid gray;
+}
+form.formWrapp .fieldBoxForm.false .textField, form.formWrapp .fieldBoxForm.false .textAreaField {
+	border-color: red;
+}
+form.formWrapp .fieldBoxForm.true .textField, form.formWrapp .fieldBoxForm.true .textAreaField {
+	border-color: green;
+}
+form.formWrapp .submitBtn {
+	font-size: 18px;
+	font-weight: bold;
+	color: gray;
+	background: none;
+	cursor: pointer;
+	border: 1px solid gray;
+	margin: 5px 0;
+	float: right;
+	margin-right: 10px;
+}
+form.formWrapp .customBtn {
+	font-size: 18px;
+	font-weight: bold;
+	color: gray;
+	background: none;
+	cursor: pointer;
+	border: 1px solid gray;
+	margin: 5px 0;
+	float: right;
+}
+form.formWrapp .fieldBoxForm .errorBox {
+	width: 100%;
+	background: #ffb4b4;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	text-align: right;
+	overflow: hidden;
+	height: 0;
+	-webkit-transition: height 1s;
+	transition: height 1s;
+}
+form.formWrapp .fieldBoxForm.false .errorBox {
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+form.formWrapp .fieldBoxForm .errorBox p {
+	padding: 3px;
+}
+form.formWrapp .fieldBoxForm label span.fileBtn {
+	padding: 2px 10px;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #fff;
+	border: 1px solid gray;
+	color: #000;
+	font-weight: normal;
+}
+form.formWrapp .fieldBoxForm label span.fileBtn:hover, button:hover, form.formWrapp .submitBtn:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+form.formWrapp .fieldBoxForm label.fileImitation {
+	width: auto;
+}

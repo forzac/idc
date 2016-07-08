@@ -1,0 +1,151 @@
+.overlayModal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.boxModal {
+	width: 800px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -400px;
+    background-color: #FFF;
+    text-align: center;
+    z-index: 11;
+    overflow: hidden;
+    border: 1px solid #5CECFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-shadow: 0 0 5px #41E9FF;
+    -webkit-box-shadow: 0 0 5px #41E9FF;
+    box-shadow: 0 0 5px #41E9FF;
+}
+
+.headerModal {
+	overflow: hidden;
+    height: 40px;
+    position: relative;
+    /* border-bottom: 2px solid #cecece; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #3b393d;
+    color: white;
+}
+
+.titleModal {
+	height: 100%;
+    /* width: 60%; */
+    float: left;
+    overflow: hidden;
+    /* background-color: #eeeeee; */
+    padding: 5px;
+    line-height: 28px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.titleModal .iconTitle {
+	float: left;
+	color: #5CECFF;
+	font-size: 30px;
+ }
+
+.titleModal .title {
+	float: left;
+    padding: 0 0 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 22px;
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+}
+
+.controlModal {
+	height: 100%;
+	/*width: 40%;*/
+	float: right;
+	overflow: hidden;
+}
+
+.boxControl {
+	/*width: 33%; */
+    float: left;
+    height: 100%;
+    /* border-left: 2px solid #cecece; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* color: #5DB26B; */
+    font-size: 28px;
+}
+
+.refresh, .closeModal, .saveModal {
+	height: 100%;
+	cursor: pointer;
+	padding: 3px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.refresh {
+	/*background-color: orange;*/
+    color: #FFD83E;
+}
+.saveModal {
+	/*background-color: green;*/
+    color: #76FFB2;
+}
+.closeModal {
+	/*background-color: red;*/
+    color: #FF856E;
+}
+.refresh:hover{
+	/*color:#FFEDA8;*/
+    font-size: 30px;
+}
+.closeModal:hover{
+	/*color:#FFD1C8;*/
+    font-size: 30px;
+}
+.saveModal:hover {
+	/*color:#CCFFE2;*/
+    font-size: 30px;
+}
+
+/*.refresh:hover, .closeModal:hover, .saveModal:hover {
+	opacity: 0.7;
+}*/
+
+.contentModal {
+	padding: 10px;
+	height: 260px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.showModal {
+	margin-top: 30px;
+	cursor: pointer;
+	border: 1px solid #cecece;
+	display: block;
+	float: left;
+	padding: 5px 10px;
+}
+
+.showModal:hover {
+	background-color: #eeeeee;
+}

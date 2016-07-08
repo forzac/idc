@@ -1,0 +1,481 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* account menu */
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.eml {
+    display: none;
+}
+
+#vk
+{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(../images/frontend/social_icons2.jpg);
+    background-position: -17px -80px;
+}
+
+#google
+{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(../images/frontend/social_icons2.jpg);
+    background-position: -17px -22px;
+}
+
+#facebook
+{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(../images/frontend/social_icons2.jpg);
+    background-position: -180px -24px;
+}
+
+#ok
+{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(../images/frontend/social_icons2.jpg);
+    background-position: -240px -80px;
+}
+
+#yandex
+{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(../images/frontend/social_icons2.jpg);
+    background-position: -130px -80px;
+}
+
+#mailru
+{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(../images/frontend/social_icons2.jpg);
+    background-position: -75px -80px;
+}
+#twitter
+{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(../images/frontend/Twitter.jpg);
+}
+
+#instagram
+{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(../images/frontend/instagram.ico);
+}
+#linkedin
+{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: url(../images/frontend/linkedin.png);
+}
+.form-group {
+    margin: 10px 0 0 0 ;
+}
+
+#social {
+    margin: 10px 0 0 0px;
+    padding : 5px 5px 0 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 253px;
+}
+.wrapper {
+    padding : 20px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.social:hover{
+    opacity: 0.7;
+}
+
+form > input[type="submit"] {
+    margin: 10px 0 0 0;
+}
+
+/*------------------------------------------------------MYACCOUNT-------------------------------------------------------
+
+/* account menu */
+
+.accordion {
+    padding: 0;
+    margin: 2em 0;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1em;
+    position: relative;
+}
+
+.accordion__title {
+    padding: 0 1em;
+    border: none;
+    float: left;
+    line-height: 3;
+    height: 3em;
+    cursor: pointer;
+    margin-right: .25em;
+}
+
+.no-js .accordion__title {
+    float: none;
+    height:auto;
+    cursor:auto;
+    margin:0;
+    padding:0 2em;
+}
+
+.accordion__content {
+    float: right;
+    width: 100%;
+    margin: 3em 0 0 -100%;
+    padding: 2em;
+    border: 1px solid silver;
+}
+
+.no-js .accordion__content {
+    float:left;
+    margin:0;
+}
+
+.accordion__title:hover,
+.accordion__title.active {
+    background: silver;
+    color: white;
+}
+
+.no-js .accordion__title:hover {
+    background-color:#ccc;
+    color:#222;
+}
+
+.accordion__title.active {
+    border-top-color:lime;
+}
+
+@media (max-width: 48em) {
+
+    .accordion-tabs {
+        border: 1px solid grey;
+    }
+
+    .accordion__title,
+    .accordion__content {
+        float: none;
+        margin: 0;
+    }
+
+    .accordion__title:first-child {
+        border:none;
+    }
+
+    .accordion__title.active {
+        border-top-color:#eee;
+    }
+
+    .accordion__title.active, .accordion__title:hover {
+        background:#777;
+    }
+
+    .accordion__title:before {
+        content:"+";
+        text-align:center;
+        width:2em;
+        display:inline-block;
+    }
+    .accordion__title.active:before {
+        content:"-";
+    }
+
+    .overflow-scrolling {
+        overflow-y: scroll;
+        height:11em;
+        padding:1em 1em 0 1em;
+        /* Warning: momemtum scrolling seems buggy on iOS 7  */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .accordion__content {
+        position:relative;
+        overflow:hidden;
+        padding:0;
+    }
+
+    .no-js .accordion__content {
+        padding:1em;
+        overflow:auto;
+        display:block;
+    }
+
+    .accordion__content:after {
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        height:50px;
+        border-radius:10px 0 0 10px / 50% 0 0 50%;
+        box-shadow:-5px 0 10px rgba(0, 0, 0, 0.5);
+        content:'';
+    }
+
+}
+
+/* accordion */
+
+.accordion {
+    margin: 0px;
+}
+
+.accordion a{
+    text-decoration: none;
+}
+
+.accordion dt{
+    padding: 10px;
+    background: #28a4c9;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+.accordion dd {
+    padding: 20px 0 0 0;
+    margin-left: 0;
+}
+
+.accordion dt:last-of-type, .accordion dd:last-of-type {
+    border-bottom: 1px solid black;
+}
+
+.accordion dt a, .accordion dd a {
+    display: block;
+    color: black;
+    font-weight: bold;
+}
+
+.accordion dd {
+    border-top: 0;
+    font-size: 12px;
+}
+
+.accordion dd:last-of-type {
+    border-top: 1px solid white;
+    position: relative;
+    top: -1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font: 16px Sans-Serif;
+}
+
+/* account-menu */
+
+.account-menu ul,
+.account-menu li,
+.account-menu a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.account-menu {
+    height: 40px;
+    margin-bottom: 100px;
+    float: right;
+}
+
+.account-menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    height: 40px;
+}
+
+.account-menu li a {
+    display: block;
+    padding: 0 14px;
+    margin: 6px 0;
+    line-height: 28px;
+    text-decoration: none;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+
+    transition: color .2s ease-in-out;
+}
+
+.account-menu li:first-child a { border-left: none; }
+.account-menu li:last-child a{ border-right: none; }
+
+.last-menu{ background: #b94a48; color:#fff; border-radius: 4px; }
+
+.account-menu li:hover > a { color: #8fde62; }
+
+.account-menu ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+
+    opacity: 0;
+
+
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+
+    -webkit-transition: opacity .25s ease .1s;
+    -moz-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+}
+
+.account-menu li:hover > ul { opacity: 1; }
+
+.account-menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+}
+
+.account-menu li:hover > ul li {
+    height: 26px;
+    overflow: visible;
+    padding: 0;
+}
+
+.account-menu ul li a {
+    width: 100px;
+    padding: 0 0 0 4px;
+    margin: 0;
+    border: none;
+}
+
+.account-menu ul li:last-child a { border: none; }
+
+.float-clear{
+    overflow: hidden;
+}
+
+.email-notif, .confidentiality{
+    margin-left: 20px;
+}
+
+.alert-message{position: absolute; top: 25%; left: 40%}

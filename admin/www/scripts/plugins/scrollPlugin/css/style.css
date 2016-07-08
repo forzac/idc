@@ -1,0 +1,130 @@
+﻿html, body {margin: 0; padding: 0;height: 100%; font-family: Verdana;}
+html {
+    overflow: hidden;
+}
+#pageWrapper {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 1px auto;
+    height: 100%;
+    background: #fff;
+    padding-right: 60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.scroller {
+    display: block;
+    padding: 0;
+    height: 100%;
+}
+.scroller::-moz-focus-inner {
+    padding: 10px; 
+    border: 10px solid red;
+}
+.scroller:focus {
+    outline: none;
+}
+.scroller::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.scroller__track {
+    position: absolute;
+    top: 130px;
+    right: 0;
+    bottom: 65px;
+    z-index: 3;
+}
+.scroller__track-visual {
+    position: absolute;
+    top: 130px;
+    right: 10px;
+    bottom: 65px;
+    z-index: 2;
+    width: 40px;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    padding: 20px 0;
+    padding-right: 7px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.scroller__track-visual:active {
+    box-shadow: 0 0 7px rgba(0, 0, 0, .4) inset;
+}
+
+.scroller__bar {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    width: 60px;
+    height: 158px !important;
+    background: url(../images/scrollerBar.png) no-repeat;
+    -webkit-transition: width .2s linear;
+    transition: width .2s linear;
+}
+
+.baron .scroller__bar {
+    display: block;
+}
+
+
+.container {
+    overflow: hidden;
+}
+
+/* Controls */
+.scroller__control {
+    position: absolute;
+    z-index: 4;
+    width: 60px;
+    height: 60px;
+    background: #fc9;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.scroller__menu {
+    top: 0;
+    right: 0;
+    background: url(../images/scrollMenu.png) no-repeat;
+}
+.scroller__up {
+    top: 65px;
+    right: 0;
+    background: url(../images/up.png) no-repeat;
+}
+.scroller__down {
+    right: 0;
+    bottom: 0;
+    background: url(../images/down.png) no-repeat;
+}
+.box__no__active {
+    width: 6px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-left: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.box__active {
+    background-color: #9c9c9c;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;  
+    position: absolute;
+    top: -100%;
+    left: 0;
+}

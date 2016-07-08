@@ -1,0 +1,134 @@
+body {
+	margin:0;
+	padding: 0;
+}
+.wrapp {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #eeeeee;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 3px; 
+	border: 1px solid #000;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+th {
+	background: #b0e0e6;
+}
+.addNewField td {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.optionName {
+	width: 20%;
+	text-align: left;
+	font-weight: bold;
+}
+
+.removeBlock {
+	width: 20px;
+}
+.boxOptionFields {
+	float: left;
+	overflow: hidden;
+}
+.optionField {
+	display: inline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.editableFields {
+	height: 30px;
+}
+
+.editableFields td input {
+	width: 100%;
+	height: 29px;
+	border: none;
+	outline: none;
+	padding: 3px 10px;
+	box-sizing: border-box;
+	background: #cecece;
+}
+
+::-webkit-input-placeholder {
+	font-weight: bold;
+	color:#fff;
+}
+
+::-moz-placeholder          {
+	font-weight: bold;
+	color:#fff;
+}
+
+:-moz-placeholder           {
+	font-weight: bold;
+	color:#fff;
+}
+
+:-ms-input-placeholder      {
+	font-weight: bold;
+	color:#fff;
+}
+
+.editableFields td select{
+	width: 100%;
+	height: 29px;
+	border: none;
+	outline: none;
+	background-color: #cecece;
+}
+
+.newRow, .removeRow {
+	display: block;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.newRow {
+	color: green;
+}
+
+.newRow:hover {
+	color: #47f72b;
+}
+
+.removeRow {
+	color: red;
+}
+
+.removeRow:hover {
+	color: magenta;
+}
+
+.newSeleOption {
+	float: left;
+	background-color: #cecece;
+	border: none;
+	padding: 2px 5px;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

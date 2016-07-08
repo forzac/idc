@@ -1,0 +1,223 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "fonts.css";
+
+//MEDIA QUERIES VARIABLES
+$mobile: "(max-width: 820px)";
+
+//VARIABLES
+$borderColor: gray;
+$headerBg: #e7e5e5;
+$boxTopNavBg: #e2c1c1;
+$topNavBg: #928b8b;
+$textColor: #000;
+$activeLinkColor: #fff;
+$mainNavItem: #fff;
+$mainNavItemHover: #fff;
+
+
+
+/* font-family: "OpenSansRegular"; */
+
+body {
+	font-family: OpenSansRegular;
+	color: $textColor;
+}
+
+.wrapper {
+	width: 100%;
+	min-width: 640px;
+}
+	
+header {
+	background-color: $headerBg;
+	height: 100px;
+	border-bottom: 1px solid $borderColor;
+	box-sizing: border-box;
+	position: relative;
+
+	.boxAbsolute {
+		width: 70%;
+		margin: 0 auto;
+		background-color: $headerBg;
+		position: relative;
+
+		& nav.boxTopNav {
+			position: absolute;
+			top: 0;
+			background-color: $boxTopNavBg;
+			width: 100%;
+			min-height: 136px;
+		}
+	}
+
+	& .topNav {
+		position: absolute;
+		bottom: 0;
+		list-style-type: none;
+		text-align: center;
+		width: 100%;
+		background-color: $topNavBg;
+		border: 1px solid $borderColor;
+		border-top: none;
+		box-sizing: border-box;
+		color: $textColor;
+
+		& li {
+			display: inline-block;
+			margin-right: 25px;
+
+			& a {
+				text-align: center;
+				display: block;
+				padding: 10px 15px;
+				text-decoration: none;
+				font-size: 16px;
+				font-weight: bold;
+				color: $textColor;
+
+				&:hover {
+					color: $activeLinkColor;
+				}
+				&:active {
+					color: $activeLinkColor;
+				}
+			}
+		}
+		&:last-child li {
+			margin-right: 0;
+		}
+	}
+}
+#content {
+	overflow: hidden;
+	// height: 100vh;
+
+	.sitebar {
+		float: left;
+		width: 15%;
+		max-width: 140px;
+		min-height: 100px;
+		position: relative;
+		padding: 0 10px;
+		box-sizing: border-box;
+
+		& .boxStyle {
+			border: 1px solid $borderColor;
+			border-top: none;
+			border-bottom: none;
+			width: 20px;
+			height: 10000vh;
+			position: absolute;
+			left: 50%;
+			margin-left: -10px;
+		}
+
+		& .mainNav {
+			list-style-type: none;
+			position: relative;
+
+			& .itemNavagation {
+				width: 100px;
+				margin: 0 auto;
+				margin-top: 10px;
+				height: 100px;
+				background-color: $mainNavItem;
+				border: 1px solid $borderColor;
+				position: relative;
+				overflow: hidden;
+				cursor: pointer;
+
+				& a {
+					display: block;
+					text-decoration: none;
+					
+					& .titleItem {
+						position: absolute;
+						bottom: -25px;
+						color: #000;
+						font-size: 16px;
+						text-align: center;
+					}
+
+				}
+				 &:hover {
+			 	  	background: #efefef;
+					-webkit-transition: all 1s ease 0s;
+					-moz-transition: all 1s ease 0s;
+					-o-transition: all 1s ease 0s;
+					transition: all 1s ease 0s;
+
+					& .titleItem {
+						bottom: 0;
+						left: 3px;
+						-webkit-transition: all 0.5s ease 0s;
+						-moz-transition: all 0.5s ease 0s;
+						-o-transition: all 0.5s ease 0s;
+						transition: all 0.5s ease 0s;
+					}
+				 }
+			}
+		}
+	}
+
+	.sitebar-right {
+		float: right;
+	}
+
+	main {
+		margin: 0 auto;
+		margin-top: 40px;
+		padding: 10px 15px;
+		box-sizing: border-box;
+		width: 70%;
+		text-align: left;
+		border: 1px solid $borderColor;
+		// height: 100vh;
+	}
+}
+
+//MEDIA QUERIES
+@media #{$mobile}{
+
+	#content {
+		.sitebar {
+			max-width: 15%;
+			min-height: 1px;
+			padding: 0;
+		}
+	}
+
+	#content {
+		.sitebar {
+			.mainNav {
+				.itemNavagation {
+					width: 12.232vw;
+					height: 12.232vw;
+					margin: 0 auto;
+					margin-top: 10px
+				}
+			}
+		}
+	}
+
+	#content {
+		.sitebar {
+			.boxStyle {
+				width: 2.4vw;
+				margin-left: -1.2vw;
+			}
+		}
+	}
+}
+
+.iconFontAs{
+	font-family: FontAwesomeMaster;
+}
+.iconFontWs{
+	font-family: WebSymbolsLigaRegular;
+}

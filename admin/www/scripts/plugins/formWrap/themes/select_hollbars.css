@@ -1,0 +1,59 @@
+
+.selectBox {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.selectBox .selectField {
+	display: none;
+}
+.selectBox .select_view {
+	position: relative;
+	display: inline-block;
+	/*line-height: 40px;*/
+	padding-right: 30px;
+	padding-left: 20px;
+	cursor: pointer;
+	float: left;
+}
+.select_view .select_text {
+	display: inline-block;
+	/*line-height: 40px;*/
+	white-space: nowrap;
+}
+.selectBox .select_triangle {
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border-top: 5px solid #bdbdbd;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+}
+.selectBox .select_drop {
+	position: absolute;
+	/*top: 0;*/
+	width: auto;
+	border: 1px solid #eee;
+	background: #fff;
+	z-index: 55;
+	display: none;
+}
+.select_drop li {
+	display: block;
+	line-height: 30px;
+	padding: 10px 20px;
+	text-align: left;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.select_drop li:hover {
+	background: #f7f9fb;
+}
+.select_drop li.selected, .select_drop li[option="cant_select"] {
+	display: none;
+}
+.selectBox .select_drop {
+	display: none;
+}
